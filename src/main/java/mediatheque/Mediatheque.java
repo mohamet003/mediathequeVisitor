@@ -28,9 +28,7 @@ public class Mediatheque{
 	}
 	
 	public void printOnlyBooks() {
-		//throw new UnsupportedOperationException("Not supported yet."); 
 		System.out.println("Print only book");
-		//avec instanceof
                 VisitorPrintBook implementation = new VisitorPrintBook();
 		for (Item i : items)
                         i.accept(implementation);
